@@ -10,19 +10,20 @@ Extrae una superclase con los campos
 
 
 class Persona:
-    apellidos = "Apellidos"
-    nombre = "Nombre"
-    nif = "11111111Z"
+
+    def __init__(self, nombre, apellidos, nif):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.nif = nif
+
+
 
 
 # noinspection PyRedeclaration
 class Estudiante(Persona):
-    curso = "Primaria"
-
-    def __init__(self):
-        pass
 
     def __init__(self, nif, curso, nombre, apellidos):
+        super().__init__(nombre, apellidos, nif)
         self.nif = nif
         self.curso = curso
         self.nombre = nombre
@@ -30,33 +31,40 @@ class Estudiante(Persona):
 
     @property
     def nif(self):
+ 
         return self.__nif
 
     @nif.setter
     def nif(self, value):
+
         self.__nif = value
 
     @property
     def curso(self):
+ 
         return self.__curso
 
     @curso.setter
     def curso(self, value):
+
         self.__curso = value
 
     @property
     def nombre(self):
+
         return self.__nombre
 
     @nombre.setter
     def nombre(self, value: int):
+ 
         self.__nombre = value
 
     @property
     def apellidos(self):
+
         return self.__apellidos
 
     @apellidos.setter
     def apellidos(self, value):
-        self.__apellidos = value
 
+        self.__apellidos = value
