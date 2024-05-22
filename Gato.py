@@ -1,16 +1,23 @@
 """
 Clase Gato.
-:author: Jaime Rabasco Ronda.
+:author: Enrique Mariño Jiménez.
+
 """
 
+
 class Gato:
+    """
+    Clase gato con parámetro maulla
+    """
+    def __init__(self):
+        self.maulla = print('Miau')
 
     def maullar(self):
-        self.__miau = print('Miau')
-
-    @property
-    def miau(self):
-        return self.__miau
+        """
+        Método que devuelve el valor de self.maulla.
+        :return: Devuelve por pantalla 'Miau'.
+        """
+        return self.maulla
 
 
 g = Gato()
