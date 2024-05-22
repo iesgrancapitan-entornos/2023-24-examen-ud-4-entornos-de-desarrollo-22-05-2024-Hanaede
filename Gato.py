@@ -1,16 +1,17 @@
 """
 Clase Gato.
-:author: Jaime Rabasco Ronda.
+:author: Enrique Mariño Jiménez.
+
 """
+
 
 class Gato:
 
-    def maullar(self):
-        self.__miau = print('Miau')
+    def __init__(self):
+        self.maulla = print('Miau')
 
-    @property
-    def miau(self):
-        return self.__miau
+    def maullar(self):
+        return self.maulla
 
 
 g = Gato()
