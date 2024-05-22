@@ -2,7 +2,7 @@
 Clase Estudiante base para el Examen Convocatoria Ordinaria de la UD4
 :author: Enrique Mariño Jimñenez
 Refactorización
-Extrae una superclase con los campos.
+Extrae una superclase con los campos
 	nombre
 	apellidos
 	nif
